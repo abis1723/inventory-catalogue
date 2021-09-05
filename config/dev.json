@@ -1,0 +1,10 @@
+{
+  "DB": {
+    "APP_PORT": 3000,
+    "DB_PORT": 3307,
+    "DB_HOST": "localhost",
+    "DB_USER": "root",
+    "DB_PASSWORD": "root",
+    "DB_NAME": "inventory"
+  }
+}

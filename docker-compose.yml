@@ -1,0 +1,30 @@
+version: '3.1'
+services:
+  mysqldb:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: inventory
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./sql-dump/products-dump.sql:/docker-entrypoint-initdb.d/products-dump.sql
+          
+  product-app:
+    depends_on:
+      - mysqldb
+    container_name: product-app
+    build: .
+    ports:
+      - '5000:5000'
+    environment:
+      - NODE_ENV=uat
+      - PORT=5000
+    links:
+      - mysqldb:mysqldb
+
+
+
+      
