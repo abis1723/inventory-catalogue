@@ -26,12 +26,12 @@
 # Running the application
 * `sh start.sh` will start the application in `localhost:3000`
 
+# Preferred NODE_ENV setup
+    * `export NODE_ENV=dev` 
 * The bellow commands run the application with various options
     * `yarn start` - run the project in complied code
     * `yarn test` - run the test cases
 
-# Preferred NODE_ENV setup
-    * `export NODE_ENV=dev` 
 
 # The API end-points
     * we can access the api via localhost:3000(locally running) 
@@ -44,7 +44,7 @@
 # GET 
     http://localhost:3000/api/v1/product/price/min
 
-# API to fetch maximum fantastic attribute products
+# API to fetch fantastic attribute products for the value = true
 # GET 
     http://localhost:3000/api/v1/product/attribute/fantastic
 
@@ -54,7 +54,7 @@
 
 # API to fetch minimum rating products
 # GET 
-    http://localhost:3000/api/v1/product/rating/max
+    http://localhost:3000/api/v1/product/rating/min
 
 # Source code repository: https://github.com/abis1723/inventory-catalogue
 
