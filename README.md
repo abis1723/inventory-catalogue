@@ -48,11 +48,11 @@
 # GET 
     http://localhost:3000/api/v1/product/attribute/fantastic
 
-# API to fetch maximum rating product
+# API to fetch maximum rating products
 # GET 
     http://localhost:3000/api/v1/product/rating/max
 
-# API to fetch minimum rating product
+# API to fetch minimum rating products
 # GET 
     http://localhost:3000/api/v1/product/rating/max
 
